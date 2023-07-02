@@ -1,0 +1,123 @@
+:root {
+  --btn-c: #382ae1;
+  --link-c: #3a2ce2;
+  --heading-c: #1e3053;
+  --music-c: #727fa9;
+  --p-cancel-c: #7782aa;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  line-height: 1.8;
+  background: #d6e1ff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.card-order-summary {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  border-radius: 10px;
+  background: #fff;
+}
+.card-order-summary .img-container {
+  width: 100%;
+  height: 30%;
+}
+.card-order-summary .img-container img {
+  width: 100%;
+  height: 100%;
+}
+.card-order-summary .card-info {
+  text-align: center;
+}
+.card-order-summary .card-info .title {
+  color: var(--heading-c);
+  font-size: 2em;
+  margin: 20px auto 15px auto;
+}
+.card-order-summary .card-info .description {
+  color: #758199;
+  width: 80%;
+  margin: 15px auto 30px auto;
+  text-align: center;
+  text-indent: 15px;
+  font-size: 0.9em;
+}
+.card-order-summary .song {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  background: #f8f9fe;
+  justify-content: space-around;
+  align-content: space-between;
+}
+.card-order-summary .song .song-info {
+  display: flex;
+  gap: 10px;
+}
+.card-order-summary .song .song-info .icon {
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  background: #dfe6f9;
+  color: var(--music-c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.card-order-summary .song .song-info .title-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 48%;
+}
+.card-order-summary .song .song-info .song-title {
+  color: var(--heading-c);
+  text-wrap: nowrap;
+}
+.card-order-summary .song .song-info .song-desc {
+  color: #727e96;
+}
+.card-order-summary .song .song-change {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  align-self: center;
+}
+.card-order-summary .btn-payment {
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  font-weight: bold;
+  padding: 15px;
+  background: var(--btn-c);
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 7px 8px 1px #607d8ba5;
+}
+.card-order-summary .btn-cancel {
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  color: var(--p-cancel-c);
+  font-weight: bolder;
+  display: block;
+  width: 80%;
+  margin: 20px auto 10px;
+  padding: 10px 15px;
+  background: transparent;
+}
